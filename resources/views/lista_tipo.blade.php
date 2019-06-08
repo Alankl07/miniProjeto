@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
     <link href="{{asset('css/stylo.css')}}" rel="stylesheet">
-    <title>Document</title>
+    <title>Lista tipo de tarefa</title>
 </head>
 <body>
     <a class="stil" href="/home">Pagina Inicial</a>
