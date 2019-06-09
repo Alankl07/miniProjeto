@@ -53,7 +53,7 @@
             <div class="tipo">
                 <label for="tipo">Tipo de Tarefa</label>
                 <select class="form-control" name="tipo">
-                    <option ></option>
+                    <option >{{$tarefa->tipo_de_tarefas}}</option>
                     @foreach($tipos as $tip)
                         <option value="tipo">{{$tip->nome}}</option>
                     @endforeach
