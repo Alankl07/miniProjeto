@@ -66,13 +66,28 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+    </div>
+    <div id="tabela2" >
+        <ul class="list-group">
+            <li id="litable" class="list-group-item active">Tarefas Pendentes</li>
+            @foreach($tarefas as $ta)
+                @if(auth::user()->email == $ta->Usuario && $ta->Status != 'Feito')    
+                    <a href="{{route('tarefas.edit', $ta)}}"><li id="tabela2" class="list-group-item">{{$ta->Titulo}}</li></a>
+                @endif
+            @endforeach
+        </ul>
     </div>
 
-    <ul  id="tabela"  class="list-group">
-        <li id="tabela" class="list-group-item"><a href="{{route('tarefas.create')}}">Criar Tarefas</a></li>
-        <li id="tabela" class="list-group-item"><a href="{{route('tarefas.index')}}">Lista de Tarefas</a></li>
-        <li id="tabela" class="list-group-item"><a href="{{route('tipos.create')}}">Criar Tipos de Tarefas</a></li>
-        <li id="tabela" class="list-group-item"><a href="{{route('tipos.index')}}">Lista Tipos de Tarefas</a></li>
-    </ul>
+    <div id="tabela3">
+        <ul class="list-group">
+            <li id="tabela3" class="list-group-item active">MENU</li>
+            <li id="tabela3" class="list-group-item"><a href="{{route('tarefas.create')}}">Criar Tarefas</a></li>
+            <li id="tabela3" class="list-group-item"><a href="{{route('tarefas.index')}}">Lista de Tarefas</a></li>
+            <li id="tabela3" class="list-group-item"><a href="{{route('tipos.create')}}">Criar Tipos de Tarefas</a></li>
+            <li id="tabela3" class="list-group-item"><a href="{{route('tipos.index')}}">Lista Tipos de Tarefas</a></li>
+        </ul>
+    </div>
+   
 </body>
 </html>

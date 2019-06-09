@@ -134,12 +134,47 @@ body#telainicial{
     background-repeat: no-repeat;
 }
 
-#tabela{
+div#tabela3{
+    position: relative ;
+    top: 80px;
+    text-align: center;
     margin: 10px;
     margin-left: 2%;
     margin-right: 40%;
     opacity: 0.90;
     
+}
+
+li#tabela3{
+    position: relative;
+    top: -500px;
+    text-align: center;
+    margin: 10px;
+    margin-left: 2%;
+    margin-right: 40%;
+    opacity: 0.90;
+}
+
+#tabela2{
+    position: relative;
+    margin: 10px;
+    margin-top: 10px;
+    margin-left: 50%;
+    margin-right: 20px;
+    text-align: center;
+    opacity: 0.90;
+    
+}
+
+li#litable{
+    position: relative;
+    top: -20px;
+    margin-right: 20px;
+    margin-left: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13pt;
+    color: black;
 }
 
 

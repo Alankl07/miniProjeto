@@ -46,7 +46,7 @@ class TipoController extends Controller
         $tipo = new Tipo();
         $tipo->nome = $request->input('nome');
         $tipo->save();
-        return redirect()->route('tipos.index');
+        return redirect()->route('tipos.create');
     }
 
     /**

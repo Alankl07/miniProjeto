@@ -54,7 +54,7 @@ class TarefaController extends Controller
         $ta->tipo_de_tarefas = $request->input('tipo');
         $ta->Data_da_conclusão = $request->input('datepicker');
         $ta->save();
-        return redirect()->route('tarefas.index');
+        return redirect()->route('tarefas.create');
     }
 
     /**

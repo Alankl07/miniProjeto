@@ -53,7 +53,7 @@ class UsuarioController extends Controller
         $usuario->Login = $request->input('login');
         $usuario->Senha = $request->input('senha');
         $usuario->save();
-        return redirect()->route('usuarios.index');
+        return redirect()->route('usuarios.create');
     }
 
     /**

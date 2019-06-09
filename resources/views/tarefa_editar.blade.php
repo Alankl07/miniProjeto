@@ -6,12 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
     <link href="{{asset('css/stylo.css')}}" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-        $( "#datepicker" ).datepicker();} );
-    </script>
     <title>Editar Tarefa</title>
 </head>
 <body id="body">
@@ -67,7 +61,7 @@
             </div>
 
             <div class="conc">
-                <p>Data da Conclusão: <input class="form-control" type="text" name="datepicker" id="datepicker" value="{{$tarefa->Data_da_conclusão}}"></p>
+                <p>Data da Conclusão: <input class="form-control" type="date" name="datepicker" id="datepicker" value="{{$tarefa->Data_da_conclusão}}"></p>
             </div>
 
             <div class="btn">
